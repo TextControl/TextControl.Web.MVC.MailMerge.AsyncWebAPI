@@ -61,7 +61,7 @@ namespace tx_wp_api {
 		public void Create(string requestUrl) {
 
 			this.Id = Guid.NewGuid().ToString();
-			this.RetrieveDocumentUrl = requestUrl + "?processingQueueId=" + this.Id;
+			this.RetrieveDocumentUrl = requestUrl.Replace("/1", "/" + this.Id);
 
 			using (var db = new LiteDatabase(@"Filename=App_Data/processingqueue.db; Connection=shared")) {
 				var col = db.GetCollection<ProcessingRequest>("queue");

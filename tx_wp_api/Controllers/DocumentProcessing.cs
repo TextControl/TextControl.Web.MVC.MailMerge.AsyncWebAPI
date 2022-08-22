@@ -18,18 +18,18 @@ namespace tx_wp_api.Controllers {
 				WebHookUrl = webHookUrl
 			};
 
-			request.Create(Url.ActionLink("Get", "DocumentProcessing"));
+			request.Create(Url.ActionLink("Get", "DocumentProcessing", new { id = "1" }));
 
 			Task.Run(() => TextControlProcessing.Merge(request));
 
 			return request;
 		}
 
-		[Route("api/[controller]")]
+		[Route("api/[controller]/{id}")]
 		[HttpGet]
-		public string Get(string processingQueueId) {
+		public string Get([FromRoute] string id) {
 
-			ProcessingRequest request = new ProcessingRequest(processingQueueId);
+			ProcessingRequest request = new ProcessingRequest(id);
 			return request.RetrieveDocument();
 		}
 	}
