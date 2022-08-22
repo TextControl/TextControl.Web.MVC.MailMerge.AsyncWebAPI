@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
+    <EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization>true</EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="licenses.licx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="licenses.licx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiteDB" Version="5.0.12" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="TXDocumentServer">
+      <HintPath>..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 30.0.NET Server for ASP.NET\Assembly\TXDocumentServer.dll</HintPath>
+    </Reference>
+    <Reference Include="txic">
+      <HintPath>..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 30.0.NET Server for ASP.NET\Assembly\bin64\txic.dll</HintPath>
+    </Reference>
+    <Reference Include="txkernel">
+      <HintPath>..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 30.0.NET Server for ASP.NET\Assembly\bin64\txkernel.dll</HintPath>
+    </Reference>
+    <Reference Include="TXTextControl">
+      <HintPath>..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 30.0.NET Server for ASP.NET\Assembly\TXTextControl.dll</HintPath>
+    </Reference>
+    <Reference Include="TXTextControl.Server">
+      <HintPath>..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 30.0.NET Server for ASP.NET\Assembly\TXTextControl.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="txtools">
+      <HintPath>..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 30.0.NET Server for ASP.NET\Assembly\bin64\txtools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+
+</Project>
