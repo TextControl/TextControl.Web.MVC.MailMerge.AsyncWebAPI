@@ -24,28 +24,31 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="TXDocumentServer">
-      <HintPath>..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 30.0.NET Server for ASP.NET\Assembly\TXDocumentServer.dll</HintPath>
-    </Reference>
-    <Reference Include="txic">
-      <HintPath>..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 30.0.NET Server for ASP.NET\Assembly\bin64\txic.dll</HintPath>
-    </Reference>
-    <Reference Include="txkernel">
-      <HintPath>..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 30.0.NET Server for ASP.NET\Assembly\bin64\txkernel.dll</HintPath>
-    </Reference>
-    <Reference Include="TXTextControl">
-      <HintPath>..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 30.0.NET Server for ASP.NET\Assembly\TXTextControl.dll</HintPath>
-    </Reference>
-    <Reference Include="TXTextControl.Server">
-      <HintPath>..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 30.0.NET Server for ASP.NET\Assembly\TXTextControl.Server.dll</HintPath>
-    </Reference>
-    <Reference Include="txtools">
-      <HintPath>..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 30.0.NET Server for ASP.NET\Assembly\bin64\txtools.dll</HintPath>
-    </Reference>
+    <Folder Include="App_Data\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Reference Include="TXBarcode">
+      <HintPath>..\..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 31.0.NET Server for ASP.NET\Assembly\TXBarcode.dll</HintPath>
+    </Reference>
+    <Reference Include="TXDocumentServer">
+      <HintPath>..\..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 31.0.NET Server for ASP.NET\Assembly\TXDocumentServer.dll</HintPath>
+    </Reference>
+    <Reference Include="TXDrawing">
+      <HintPath>..\..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 31.0.NET Server for ASP.NET\Assembly\TXDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="TXImageProvider">
+      <HintPath>..\..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 31.0.NET Server for ASP.NET\Assembly\TXImageProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="txpdf">
+      <HintPath>..\..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 31.0.NET Server for ASP.NET\Assembly\txpdf.dll</HintPath>
+    </Reference>
+    <Reference Include="TXTextControl">
+      <HintPath>..\..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 31.0.NET Server for ASP.NET\Assembly\TXTextControl.dll</HintPath>
+    </Reference>
+    <Reference Include="TXTextControl.Server">
+      <HintPath>..\..\..\..\..\..\Program Files\Text Control GmbH\TX Text Control 31.0.NET Server for ASP.NET\Assembly\TXTextControl.Server.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
